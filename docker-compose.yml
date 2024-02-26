@@ -1,11 +1,11 @@
-version: '3'
+version: '2'
 services:
   jupyterlab:
     restart: always
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jupyterlab
+    container_name: kmeans-jupyterlab
     working_dir: '/src'
     tty: true
     volumes:
